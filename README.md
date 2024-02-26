@@ -1,1 +1,1 @@
-# publish-s3-bucket-coda-fala
+# publish-s3-bucket = coda+fala
