@@ -1,0 +1,24 @@
+{
+  "name": "demo-upload-s3-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon --exec npm run offline",
+    "offline": "npx sls offline start --host 0.0.0.0",
+    "test": "IS_OFFLINE=true npx jest --collect-coverage ",
+    "test:watch": "IS_OFFLINE=true npx jest --watch-all "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1197.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "serverless": "^3.22.0",
+    "serverless-offline": "9.2"
+  }
+}
